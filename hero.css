@@ -16,3 +16,14 @@
 .hero h1 {
     font-size: 8rem;
 }
+
+@media screen and (max-width:768px) {
+    .hero p {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+    
+    .hero h1 {
+        font-size: 6rem;
+    }
+}
