@@ -1,18 +1,18 @@
 .hero {
-    color: #78D7C3;
-    height: 500px;
+    color: #9eebda;
+    height: 80vh;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .hero p {
     font-size: 1.4rem;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 8rem;
 }

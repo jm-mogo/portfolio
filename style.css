@@ -1,11 +1,12 @@
 body {
-    color: rgb(250, 244, 255);
+    
 background: #2b223b;
 background: linear-gradient(120deg, rgba(43,34,59,1) 21%, rgb(52, 66, 98) 88%, rgba(120,215,195,1) 160%) fixed;
 height: 100vh;
 }
 
 *, body {
+    color: #9eebda;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
