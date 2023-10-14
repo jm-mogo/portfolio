@@ -1,5 +1,7 @@
 body {
-    background-color: #e9e6eb;
+background: #2b223b;
+background: linear-gradient(120deg, rgba(43,34,59,1) 21%, rgb(52, 66, 98) 88%, rgba(120,215,195,1) 160%);
+height: 100vh;
 }
 
 *, body {
