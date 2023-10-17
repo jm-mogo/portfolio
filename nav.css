@@ -2,8 +2,10 @@
 
 
   .navigation-header {
-    
-    padding: 0 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 12px;
     height: 60px;
     display: flex;
     justify-content: center;

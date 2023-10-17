@@ -1,8 +1,5 @@
 body {
-    
-background: #2b223b;
-background: linear-gradient(120deg, rgba(43,34,59,1) 21%, rgb(52, 66, 98) 88%, rgba(120,215,195,1) 160%) fixed;
-height: 100vh;
+  background: linear-gradient(120deg, rgba(43,34,59,1) 21%, rgb(52, 66, 98) 88%, rgba(120,215,195,1) 160%) fixed;
 }
 
 *, body {
@@ -13,9 +10,10 @@ height: 100vh;
     font-family: sans-serif;
   }
 
-  .main-content {
-    height: 1000px;
-    max-width: 600px;
-    margin: auto;
+  @media screen and (max-width:768px) {
+    body {
+      background: linear-gradient(94deg, rgba(43,34,59,1) 21%, rgb(52, 66, 98) 88%, rgba(120,215,195,1) 160%);
+      background-attachment: scroll;
+    }
   }
   
