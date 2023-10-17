@@ -1,5 +1,8 @@
   /* Navigation */
+
+
   .navigation-header {
+    
     padding: 0 15px;
     height: 60px;
     display: flex;
@@ -15,6 +18,7 @@
     align-items: center;
   }
   .logo-container > a {
+    color: #9eebda;
     text-decoration: none;
     font-weight: 700;
     font-size: 2rem;
@@ -24,6 +28,7 @@
     gap: 40px;
   }
   .navigation-items > a {
+    color: #9eebda;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
