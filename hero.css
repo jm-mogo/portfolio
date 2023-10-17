@@ -32,16 +32,12 @@
         max-width: 90vw;
     }
     .hero p {
-        margin-left: -18px;
         font-size: 1.4rem;
         padding-bottom: 5px;
     }
     
     .hero h1 {
-        font-size: 5.8rem;
+        font-size: 5.2rem;
     }
 
-    .description-hero {
-        margin-left: 18px;
-    }
 }
