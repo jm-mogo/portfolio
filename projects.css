@@ -1,3 +1,10 @@
+.projects {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
 .project-section-title {
     color: white;
     text-align: left;
