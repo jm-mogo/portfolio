@@ -1,3 +1,7 @@
+.hero img {
+    max-height: 400px;
+}
+
 .hero {
     color: #daf7f0;
     max-width: 80vw;
@@ -5,7 +9,8 @@
     margin-top: 100px;
     padding-bottom: 100px;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     text-align: left;
     font-weight: bold;
 }
@@ -28,8 +33,13 @@
 
 @media screen and (max-width:768px) {
 
+    .hero img {
+        max-width: 80vw;
+        border-radius: 28% 72% 49% 51% / 54% 38% 62% 46%  ;
+    }
     .hero {
         max-width: 90vw;
+        flex-direction: column;
     }
     .hero p {
         font-size: 1.4rem;
