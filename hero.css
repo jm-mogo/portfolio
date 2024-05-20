@@ -1,4 +1,5 @@
 .hero img {
+    border-radius: 28% 72% 49% 51% / 54% 38% 62% 46%  ;
     max-height: 400px;
 }
 
@@ -22,7 +23,7 @@
 
 .hero h1 {
     color: #9eebda;
-    font-size: 8rem;
+    font-size: 7rem;
 }
 
 .description-hero {
