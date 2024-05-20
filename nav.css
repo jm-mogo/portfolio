@@ -1,5 +1,8 @@
   /* Navigation */
 
+  .navigation-header {
+    transition: background .2s;
+  }
 
   .navigation-header {
     position: fixed;
