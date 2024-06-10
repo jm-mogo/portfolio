@@ -5,7 +5,8 @@
     flex-direction: column;
 }
 
-.project-section-title {
+.project-section-title,
+.skills-section-title {
     color: white;
     text-align: left;
     display: flex;
@@ -13,7 +14,8 @@
     width: 100%;
 }
 
-.project-section-title h3 {
+.project-section-title h3,
+.skills-section-title h3 {
     margin-right: 10px;
 }
 
@@ -23,7 +25,8 @@
     background-color: #4bb3b894;
 }
 
-.projects-section {
+.projects-section,
+.skills-section {
     margin: auto;
     width: 90vw;
 }
