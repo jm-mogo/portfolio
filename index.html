@@ -38,7 +38,7 @@
     </header>
 
     <div class="hero">
-        <img src="images/MeHD.jpg" alt="Jose Mogollon">
+        <img src="images/MeHD.jpg" alt="Jose Mogollon" loading="lazy" width="400" height="400">
         <div>
             <div>
                 <p>Hi, my name is</p>
@@ -65,12 +65,10 @@
             <!-- ----- Raffle Management Platform (Video) ----- -->
             <div class="project" data-aos="fade-right">
                 <div class="project-image">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/qvG3pAD8VnA" title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="video-facade" data-video-id="qvG3pAD8VnA">
+                        <img loading="lazy" src="https://i.ytimg.com/vi/qvG3pAD8VnA/hqdefault.jpg"
+                            alt="Raffle Platform Video Thumbnail" width="560" height="315">
+                        <div class="play-button"></div>
                     </div>
                 </div>
                 <div class="project-info">
@@ -100,8 +98,11 @@
             <!-- ----- Online Enrollment System ----- -->
             <div class="project" data-aos="fade-left">
                 <div class="project-image">
-                    <!-- Removed <a> tag wrapper from image -->
-                    <img src="images/seminariojuvenil.JPG" alt="Enrollment System">
+                    <a href="https://seminariojuvenil-production.up.railway.app/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="images/seminariojuvenil.JPG" alt="Enrollment System" loading="lazy" width="560"
+                            height="315">
+                    </a>
                 </div>
                 <div class="project-info">
                     <h3 class="project-title">Online Enrollment System</h3>
@@ -131,12 +132,10 @@
             <!-- ----- Youth Group Management App (Video) ----- -->
             <div class="project" data-aos="fade-right">
                 <div class="project-image">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/w-8E6nu9wE4" title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="video-facade" data-video-id="w-8E6nu9wE4">
+                        <img loading="lazy" src="https://i.ytimg.com/vi/w-8E6nu9wE4/hqdefault.jpg"
+                            alt="Youth Group App Video Thumbnail" width="560" height="315">
+                        <div class="play-button"></div>
                     </div>
                 </div>
                 <div class="project-info">
@@ -161,12 +160,10 @@
             <!-- ----- Cafeteria Student Management System (Video) ----- -->
             <div class="project" data-aos="fade-left">
                 <div class="project-image">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/xgiebanj25g" title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="video-facade" data-video-id="xgiebanj25g">
+                        <img loading="lazy" src="https://i.ytimg.com/vi/xgiebanj25g/hqdefault.jpg"
+                            alt="Cafeteria System Video Thumbnail" width="560" height="315">
+                        <div class="play-button"></div>
                     </div>
                 </div>
                 <div class="project-info">
@@ -184,7 +181,6 @@
                             <li>Generate professional-looking PDF seating charts</li>
                         </ul>
                     </div>
-                    <!-- Empty link has been removed from here -->
                 </div>
             </div>
         </div>
@@ -198,11 +194,19 @@
         <div class="about-container">
             <div class="about-column">
                 <h4>SKILLS</h4>
+                <!-- ===== START: UPDATED SKILLS ===== -->
                 <div class="skills">
-                    <span>Laravel</span><span>GitHub</span><span>Express</span>
-                    <span>Linux</span><span>React</span><span>Tailwind</span>
-                    <span>Vue</span><span>Git</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Vue</span>
+                    <span>Laravel</span>
+                    <span>Express</span>
+                    <span>Tailwind</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Linux</span>
                 </div>
+                <!-- ===== END: UPDATED SKILLS ===== -->
             </div>
         </div>
     </div>
@@ -211,10 +215,10 @@
         <p>© jm-mogo</p>
         <div class="socials">
             <a href="https://www.instagram.com/j_mogo/">
-                <img src="icons/insta.png" alt="">
+                <img src="icons/insta.png" alt="Instagram Link" width="28" height="28">
             </a>
             <a href="https://github.com/jm-mogo">
-                <img src="icons/github.png" alt="">
+                <img src="icons/github.png" alt="GitHub Link" width="28" height="28">
             </a>
         </div>
     </footer>

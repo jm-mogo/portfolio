@@ -78,19 +78,22 @@
 
 .project-image {
     width: 100%;
+    /* This makes sure the container respects the aspect ratio of the content */
+    aspect-ratio: 16 / 9;
+    background-color: #181d27; /* Fallback color while image/video loads */
+    border-radius: 10px;
+    overflow: hidden; /* Important for keeping the border-radius on content */
 }
 
 .project-image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 2px 6px 20px #181d27;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .project-image a:hover img {
     transform: scale(1.04);
-    box-shadow: 5px 10px 30px #11141a;
 }
 
 .project-tech {
@@ -129,27 +132,60 @@
 }
 
 
-/* ================================================== */
-/* ===== NEW STYLES FOR RESPONSIVE VIDEO EMBED ====== */
-/* ================================================== */
-
-.video-container {
+/* ===== START: VIDEO FACADE STYLES ===== */
+.video-facade {
     position: relative;
-    overflow: hidden;
+    cursor: pointer;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    border-radius: 10px;
-    box-shadow: 2px 6px 20px #181d27;
+    height: 100%;
 }
 
-.video-container iframe {
+.video-facade img {
+    border-radius: 0; /* Let the container handle the radius */
+    box-shadow: none; /* Let the container handle the shadow */
+}
+
+.video-facade:hover img {
+    transform: scale(1.05);
+}
+
+.video-facade .play-button {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    border: 2px solid white;
+}
+
+.video-facade .play-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent white;
+}
+
+.video-facade:hover .play-button {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* Responsive iframe container for when the video is loaded */
+.project-image iframe {
     width: 100%;
     height: 100%;
     border: 0;
 }
+/* ===== END: VIDEO FACADE STYLES ===== */
 
 
 @media screen and (min-width: 768px) {
