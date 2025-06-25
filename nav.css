@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* ===== FIX: Ensure nav is always on top of other content ===== */
+    z-index: 1000;
   }
   
   nav {
@@ -48,10 +50,18 @@
     font-weight: 800;
     color: white;
   }
+
+  /* ======================================= */
+  /* ===== RESPONSIVE & ENHANCED NAV   ===== */
+  /* ======================================= */
+
   @media screen and (max-width:768px) {
 
     .navigation-header {
-      background-color: #1d1727;
+      background-color: #1d1727a9; /* Add slight transparency */
+      /* ===== ENHANCEMENT: Add a modern blur effect ===== */
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
     }
 
     .hamburger {
@@ -69,7 +79,6 @@
       width: 40px;
       height: 32px;
       position: absolute;
-
       cursor: pointer;
       opacity: 0%;
       z-index: 2;
@@ -81,48 +90,35 @@
       height: 4px;
       margin-bottom: 5px;
       position: relative;
-  
-      background: #294263;
+      background: #9eebda; /* Brighter background for better visibility */
       border-radius: 3px;
-  
       z-index: 1;
-  
       transform-origin: 4px 0px;
-  
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
           opacity 0.55s ease;
-  }
+    }
   
-  .hamburger span:first-child {
+    .hamburger span:first-child {
       transform-origin: 0% 0%;
-  }
+    }
   
-  .hamburger span:nth-child(4) {
+    .hamburger span:nth-child(4) {
       transform-origin: 0% 100%;
-  }
+    }
 
-  .hamburger input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-}
+    .hamburger input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
 
-/*
- * But let's hide the middle one.
- */
-.hamburger input:checked ~ span:nth-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
+    .hamburger input:checked ~ span:nth-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-.hamburger input:checked ~ span:nth-child(4) {
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-  
+    .hamburger input:checked ~ span:nth-child(4) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
 
     .navigation-items {
       background-color: #1d1727;
@@ -134,15 +130,11 @@
       width: 100%;
       top: 60px;
       left: 0px;
-      
       height: calc(100vh - 60px);
-
       transform-origin: 0% 0%;
       transform: translate(-100%, 0);
-  
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
-
     
     .navigation-items a {
       font-size: 2rem;

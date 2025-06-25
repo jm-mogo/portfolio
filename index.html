@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="script.js" defer></script>
+    <title>Jose Mogollon - Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="skills.css">
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
     <header class="navigation-header">
         <nav>
             <div class="logo-container">
-                <a href="./index.html">Jmogo</a>
+                <a href="#">Jmogo</a>
             </div>
             <div class="navigation-items" id="navigation-items">
-                <a href="#">About</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#footer">Contact Me</a>
+                <a href="#about-section">About</a>
+                <a href="#experience-section">Experience</a>
+                <a href="#footer">Contact</a>
             </div>
             <div class="hamburger">
                 <input type="checkbox" id="menuCheck" />
@@ -35,7 +38,7 @@
     </header>
 
     <div class="hero">
-        <img src="images/MeHD.jpg" alt="">
+        <img src="images/MeHD.jpg" alt="Jose Mogollon">
         <div>
             <div>
                 <p>Hi, my name is</p>
@@ -49,149 +52,156 @@
                 </p>
             </div>
         </div>
-
-
     </div>
 
 
-    <div class="projects-section" id="projects-section">
-        <div class="project-section-title">
-            <h3>Things I've built</h3>
+    <div id="experience-section" class="projects-section">
+        <div class="section-title">
+            <h3>EXPERIENCE (PROJECTS)</h3>
             <div class="line"></div>
         </div>
 
         <div class="projects">
-
-            <div class="project">
-                <div class="project-title">
-                    <h3>Venezuela Missionary Map</h3>
-                </div>
-                <div class="project-description">
-                    <p>As a Baptist Christian, I believe in fostering strong connections within our community.</p>
-                    <p class="note">Note: I created this website to help members of all Baptist churches connect and
-                        learn more about each other.</p>
-                </div>
-
+            <!-- ----- Raffle Management Platform ----- -->
+            <div class="project" data-aos="fade-right">
                 <div class="project-image">
-                    <a href="https://jm-mogo.github.io/venezuelaMissionaryMap/" target="_blank">
-                        <img src="images/venezuelaMissionaryMap.JPG" alt="page">
-                    </a>
+                    <img src="images/talonario.JPG" alt="Raffle Platform">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Raffle Management Platform</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Livewire</span>
+                    </div>
+                    <div class="project-description">
+                        <p>Contributed to the development of a robust platform for managing fundraising raffles, built
+                            with Laravel and Livewire to simplify ticket sales and seller management.</p>
+                        <ul class="project-features">
+                            <li>Raffle Creation Module</li>
+                            <li>Ticket Sales Interface for sellers</li>
+                            <li>User Management for adding/removing sellers</li>
+                            <li>Real-time Sales and Revenue Dashboard</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="project-link">Page link <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="line"></div>
 
-            <div class="project">
-                <div class="project-title">
-                    <h3>Little Worm</h3>
-                </div>
-                <div class="project-description">
-                    <p>A Snake like game, with multiplayer mode and modular rules to play.</p>
-                    <p class="note">Note: you can try it out in your phone, but it's by far more enjoyable in PC</p>
-                </div>
+            <!-- ----- Online Enrollment System ----- -->
+            <div class="project" data-aos="fade-left">
                 <div class="project-image">
-                    <a href="https://jm-mogo.github.io/littleWorm/" target="_blank">
-                        <img src="images/littleWorm.PNG" alt="game">
-                    </a>
+                    <img src="images/seminariojuvenil.JPG" alt="Enrollment System">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Online Enrollment System</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Vue</span>
+                    </div>
+                    <div class="project-description">
+                        <p>Developed for a vacation program, streamlining the process for students to submit their
+                            documents and information via the website.</p>
+                        <ul class="project-features">
+                            <li>Landing page</li>
+                            <li>Registration form</li>
+                            <li>Module for reviewing registrations</li>
+                            <li>Schedule appointments</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="project-link">Page link <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="line"></div>
 
-            <div class="project">
-                <div class="project-title">
-                    <h3>Restauran Page</h3>
-                </div>
-                <div class="project-description">
-                    <p>A Single Page Aplication built using webpack and npm.</p>
-                </div>
+            <!-- ----- Youth Group Management App ----- -->
+            <div class="project" data-aos="fade-right">
                 <div class="project-image">
-                    <a href="https://jm-mogo.github.io/restaurantPage/" target="_blank">
-                        <img src="images/restaurantPage.png" alt="page">
-                    </a>
+                    <img src="images/jovenesvencedores.JPG" alt="Youth Group App">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Youth Group Management App</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express</span>
+                    </div>
+                    <div class="project-description">
+                        <p>Record key information for each young person and their parent/guardian, keep track of
+                            meetings, attendance, and team points during periods of time called "seasons".</p>
+                    </div>
+                    <a href="#" class="project-link">Video link <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="line"></div>
 
-            <div class="project">
-                <div class="project-title">
-                    <h3>Slide puzzle game</h3>
-                </div>
-                <div class="project-description">
-                    <p>I like puzzle games, so I made one myself, my best record is 32 to movements, try to beat that.
-                    </p>
-
-                </div>
+            <!-- ----- Cafeteria Student Management System ----- -->
+            <div class="project" data-aos="fade-left">
                 <div class="project-image">
-                    <a href="https://jm-mogo.github.io/SlidePuzzle/" target="_blank">
-                        <img src="images/slideGame.PNG" alt="game">
-                    </a>
-
+                    <img src="images/cafeteriamanager.JPG" alt="Cafeteria System">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Cafeteria Student Management and Seating System</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <div class="project-description">
+                        <p>Develop an algorithm to automatically generate and assign students to tables based on
+                            pre-defined criteria, and design an intuitive interface for administrators.</p>
+                        <ul class="project-features">
+                            <li>Intuitive data input for administrators</li>
+                            <li>Configure seating preferences</li>
+                            <li>Generate professional-looking PDF seating charts</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="project-link">Video link <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <div class="skills-section">
-        <div class="skills-section-title">
-            <h3>Skills I've developed</h3>
+    <div id="about-section" class="about-section">
+        <div class="section-title">
+            <h3>ABOUT & SKILLS</h3>
             <div class="line"></div>
         </div>
-
-        <div class="skills">
-            <div class="skill">
-                <img src="icons/js.png" alt="">
-                <h3>JavaScript</h3>
-            </div>
-            <div class="skill">
-                <img src="icons/html.png" alt="">
-                <h3>HTML</h3>
-            </div>
-            <div class="skill">
-                <img src="icons/css-3.png" alt="">
-                <h3>CSS</h3>
-            </div>
-            <div class="skill">
-                <img src="icons/git.png" alt="">
-                <h3>Git</h3>
-            </div>
-            <div class="skill">
-                <img src="icons/github-sign.png" alt="">
-                <h3>GitHub</h3>
-            </div>
-            <div class="skill">
-                <img src="icons/linux.png" alt="">
-                <h3>Linux</h3>
-            </div>
-
-        </div>
-        <div class="skills-section-title">
-            <h3>I'm currently learning</h3>
-            <div class="line"></div>
-        </div>
-        <div class="skills">
-            <div class="skill">
-                <img src="icons/react.png" alt="" style="max-width: 250px;">
-                <h3>React</h3>
+        <div class="about-container">
+            <div class="about-column">
+                <h4>SKILLS</h4>
+                <div class="skills">
+                    <span>Laravel</span><span>GitHub</span><span>Express</span>
+                    <span>Linux</span><span>React</span><span>Tailwind</span>
+                    <span>Vue</span><span>Git</span>
+                </div>
             </div>
         </div>
     </div>
 
     <footer id="footer">
-        <p>&#169; jm-mogo</p>
+        <p>© jm-mogo</p>
         <div class="socials">
             <a href="https://www.instagram.com/j_mogo/">
                 <img src="icons/insta.png" alt="">
             </a>
-
             <a href="https://github.com/jm-mogo">
                 <img src="icons/github.png" alt="">
             </a>
         </div>
     </footer>
 
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 120,
+        });
+    </script>
 </body>
 
 </html>
